@@ -19,39 +19,19 @@ const sections = {
 
 export default function App() {
   const [active, setActive] = useState("About");
-  const [isClosing, setIsClosing] = useState(false);
-
-  const handleSwitch = (nextSection) => {
-    if (nextSection === active || isClosing) return;
-
-    setIsClosing(true);
-
-    setTimeout(() => {
-      setActive(nextSection);
-      setIsClosing(false);
-    }, 400);
-  };
 
   return (
     <div className="shell">
       <div className="glow glow-1" />
       <div className="glow glow-2" />
 
-      <motion.main
-        className="window"
-        animate={
-          isClosing
-            ? { opacity: 0, scale: 0.92, y: 30 }
-            : { opacity: 1, scale: 1, y: 0 }
-        }
-        transition={{ duration: 0.4 }}
-      >
+      <main className="window">
         <div className="topbar">
-        <div className="dots">
-          <span className="dot close-dot" onClick={() => setIsClosing(true)} />
-          <span className="dot" />
-          <span className="dot" />
-        </div>
+          <div className="dots">
+            <span />
+            <span />
+            <span />
+          </div>
           <p>portfolio.exe</p>
         </div>
 
@@ -67,7 +47,7 @@ export default function App() {
               <button
                 key={name}
                 className={active === name ? "active" : ""}
-                onClick={() => handleSwitch(name)}
+                onClick={() => setActive(name)}
               >
                 {name}
               </button>
@@ -88,7 +68,7 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
         </section>
-      </motion.main>
+      </main>
     </div>
   );
 }
