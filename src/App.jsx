@@ -4,16 +4,16 @@ import "./App.css";
 
 const sections = {
   About: {
-    title: "Hi, I'm Lisa",
-    body: "I build clean, modern web experiences with React and a focus on design."
+    title: "Hi, I'm Your Name",
+    body: "I build clean, modern web experiences with React."
   },
   Projects: {
     title: "Projects",
-    body: "Add your best projects here with short descriptions and links."
+    body: "Add 2-4 projects here with short descriptions and links."
   },
   Contact: {
     title: "Contact",
-    body: "Add your email, GitHub, LinkedIn, or Instagram here."
+    body: "yourname@email.com | GitHub | LinkedIn"
   }
 };
 
@@ -37,10 +37,8 @@ export default function App() {
 
         <section className="hero">
           <p className="eyebrow">PORTFOLIO</p>
-          <h1>Lisa</h1>
-          <p className="subtitle">
-            Frontend developer with a taste for clean UI and motion.
-          </p>
+          <h1>Your Name</h1>
+          <p className="subtitle">Frontend developer with a taste for clean UI and motion.</p>
 
           <div className="nav">
             {Object.keys(sections).map((name) => (
