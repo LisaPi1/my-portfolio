@@ -15,14 +15,18 @@ const experiences = [
   }
 ];
 
-const projects = [
+const publications = [
   {
-    name: "Project One",
-    text: "Short description of the project and what makes it interesting."
+    title: "Paper Title One",
+    journal: "Journal / Conference Name",
+    year: "2025",
+    link: "https://link-to-paper.com"
   },
   {
-    name: "Project Two",
-    text: "Short description of the project and your role in it."
+    title: "Paper Title Two",
+    journal: "Journal / Conference Name",
+    year: "2024",
+    link: "https://link-to-paper.com"
   }
 ];
 
@@ -34,8 +38,7 @@ export default function App() {
           <p className="small-label">About me | Lisa</p>
           <h1>Lisa</h1>
           <p className="intro">
-            I’m a designer/developer interested in thoughtful digital experiences,
-            research, and visual storytelling.
+            Breve intro.
           </p>
 
           <nav className="contact-list">
@@ -52,8 +55,7 @@ export default function App() {
           <p className="section-tag">About</p>
           <h2>Hi, I’m Lisa.</h2>
           <p className="lead">
-            I create calm, elegant, human-centered web experiences with a focus on
-            clarity, motion, and structure.
+            Breve intro.
           </p>
         </section>
 
@@ -77,10 +79,9 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section" id="projects">
-          <p className="section-tag">Projects</p>
-          <h2>Selected Projects</h2>
-
+        <section className="section" id="publications">
+          <p className="section-tag">Publications</p>
+          <h2>Publications</h2>
           <div className="stack">
             {projects.map((project) => (
               <article className="card" key={project.name}>
