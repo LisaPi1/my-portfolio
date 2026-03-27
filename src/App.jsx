@@ -61,6 +61,13 @@ export default function App() {
           </p>
         </section>
 
+        <nav className="top-nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
         <section className="section" id="experience">
           <p className="section-tag">Experience</p>
           <h2>Experience</h2>
