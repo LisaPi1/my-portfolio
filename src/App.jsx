@@ -61,28 +61,29 @@ export default function App() {
           </p>
         </section>
 
-        {/* EXPERIENCE → LIST STYLE */}
         <section className="section" id="experience">
           <p className="section-tag">Experience</p>
           <h2>Experience</h2>
 
-          <div className="experience-list">
+          <div className="timeline">
             {experiences.map((item) => (
-              <div className="experience-item" key={item.role + item.date}>
-                <div className="experience-header">
-                  <div>
-                    <h3>{item.role}</h3>
-                    <p className="muted">{item.place}</p>
-                  </div>
-                  <p className="date">{item.date}</p>
+              <article className="timeline-item" key={item.role + item.date}>
+                <div className="timeline-date">{item.date}</div>
+
+                <div className="timeline-marker" aria-hidden="true">
+                  <span className="timeline-dot"></span>
                 </div>
-                <p className="experience-text">{item.text}</p>
-              </div>
+
+                <div className="timeline-content">
+                  <h3>{item.role}</h3>
+                  <p className="muted">{item.place}</p>
+                  <p className="timeline-text">{item.text}</p>
+                </div>
+              </article>
             ))}
           </div>
         </section>
 
-        {/* PUBLICATIONS → KEEP CARDS */}
         <section className="section" id="publications">
           <p className="section-tag">Publications</p>
           <h2>Publications</h2>
