@@ -124,6 +124,7 @@ a {
   margin-top: 24px;
 }
 
+/*
 .card {
   background: #ffffff;
   border: 1px solid rgba(47, 42, 36, 0.08);
@@ -137,6 +138,35 @@ a {
   transform: translateY(-2px);
   box-shadow: 0 16px 34px rgba(47, 42, 36, 0.08);
 }
+*/
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(47, 42, 36, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(47, 42, 36, 0.04);
+}
+
+/* no movement for experience */
+.experience-card {
+  transition: none;
+}
+/*
+.experience-card:hover {
+  transform: none;
+  box-shadow: 0 8px 24px rgba(47, 42, 36, 0.04);
+}
+*/
+
+/* movement only for publications */
+.publication-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(47, 42, 36, 0.08);
+}
 
 .card-top {
   display: flex;
@@ -144,6 +174,7 @@ a {
   align-items: flex-start;
   gap: 16px;
 }
+
 
 .card h3 {
   margin: 0 0 6px;
@@ -160,6 +191,38 @@ a {
   line-height: 1.75;
   color: #4f483f;
 }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.experience-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(47, 42, 36, 0.08);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.experience-item h3 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.experience-text {
+  margin-top: 8px;
+  color: #4f483f;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
 
 .button-link {
   display: inline-block;

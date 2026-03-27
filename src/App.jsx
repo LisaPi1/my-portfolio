@@ -42,12 +42,12 @@ export default function App() {
             research, and visual storytelling.
           </p>
 
-        <nav className="contact-list">
-          <a href="mailto:you@example.com">📧 Email</a>
-          <a href="https://polimi.it/">🎓 Politecnico di Milano</a>
-          <a href="https://linkedin.com/">💼 LinkedIn</a>
-          <a href="#">📄 CV</a>
-        </nav>
+          <nav className="contact-list">
+            <a href="mailto:you@example.com">📧 Email</a>
+            <a href="https://polimi.it/">🎓 Politecnico di Milano</a>
+            <a href="https://linkedin.com/">💼 LinkedIn</a>
+            <a href="#">📄 CV</a>
+          </nav>
         </div>
       </aside>
 
@@ -61,33 +61,35 @@ export default function App() {
           </p>
         </section>
 
+        {/* EXPERIENCE → LIST STYLE */}
         <section className="section" id="experience">
           <p className="section-tag">Experience</p>
           <h2>Experience</h2>
 
-          <div className="stack">
+          <div className="experience-list">
             {experiences.map((item) => (
-              <article className="card" key={item.role + item.date}>
-                <div className="card-top">
+              <div className="experience-item" key={item.role + item.date}>
+                <div className="experience-header">
                   <div>
                     <h3>{item.role}</h3>
                     <p className="muted">{item.place}</p>
                   </div>
                   <p className="date">{item.date}</p>
                 </div>
-                <p>{item.text}</p>
-              </article>
+                <p className="experience-text">{item.text}</p>
+              </div>
             ))}
           </div>
         </section>
 
+        {/* PUBLICATIONS → KEEP CARDS */}
         <section className="section" id="publications">
           <p className="section-tag">Publications</p>
           <h2>Publications</h2>
 
           <div className="stack">
             {publications.map((pub) => (
-              <article className="card" key={pub.title}>
+              <article className="card publication-card" key={pub.title}>
                 <h3>
                   <a href={pub.link} target="_blank" rel="noreferrer">
                     {pub.title}
