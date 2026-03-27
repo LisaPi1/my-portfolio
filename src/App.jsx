@@ -32,7 +32,7 @@ const publications = [
 
 export default function App() {
   return (
-    <>
+    <div className="page">
       <header className="topbar">
         <nav className="topbar-nav">
           <a href="#about">About</a>
@@ -131,6 +131,6 @@ export default function App() {
           </section>
         </main>
       </div>
-    </>
+    </div>
   );
 }

@@ -28,12 +28,16 @@ a {
   text-decoration: none;
 }
 
+.page {
+  padding-top: var(--topbar-height);
+}
+
 /* TOP BAR */
 .topbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: var(--topbar-height);
   z-index: 1000;
   background: rgba(245, 243, 238, 0.94);
@@ -70,8 +74,7 @@ a {
 .layout {
   display: grid;
   grid-template-columns: 320px 1fr;
-  min-height: 100vh;
-  padding-top: var(--topbar-height);
+  min-height: calc(100vh - var(--topbar-height));
 }
 
 .sidebar {
@@ -130,7 +133,7 @@ a {
 }
 
 .content {
-  padding: 56px 64px;
+  padding: 40px 64px 56px;
 }
 
 .section {
@@ -140,7 +143,7 @@ a {
 }
 
 .hero-section {
-  padding-top: 8px;
+  padding-top: 0;
 }
 
 .section-tag {
