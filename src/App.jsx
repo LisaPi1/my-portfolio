@@ -20,13 +20,13 @@ const publications = [
     title: "Paper Title One",
     journal: "Journal / Conference Name",
     year: "2025",
-    link: "https://link-to-paper.com"
+    link: "https://example.com"
   },
   {
     title: "Paper Title Two",
     journal: "Journal / Conference Name",
     year: "2024",
-    link: "https://link-to-paper.com"
+    link: "https://example.com"
   }
 ];
 
@@ -38,14 +38,15 @@ export default function App() {
           <p className="small-label">About me | Lisa</p>
           <h1>Lisa</h1>
           <p className="intro">
-            Breve intro.
+            I’m a designer/developer interested in thoughtful digital experiences,
+            research, and visual storytelling.
           </p>
 
           <nav className="contact-list">
             <a href="mailto:you@example.com">Email</a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noreferrer">CV</a>
+            <a href="#">CV</a>
           </nav>
         </div>
       </aside>
@@ -55,7 +56,8 @@ export default function App() {
           <p className="section-tag">About</p>
           <h2>Hi, I’m Lisa.</h2>
           <p className="lead">
-            Breve intro.
+            I create calm, elegant, human-centered web experiences with a focus on
+            clarity, motion, and structure.
           </p>
         </section>
 
@@ -82,11 +84,18 @@ export default function App() {
         <section className="section" id="publications">
           <p className="section-tag">Publications</p>
           <h2>Publications</h2>
+
           <div className="stack">
-            {projects.map((project) => (
-              <article className="card" key={project.name}>
-                <h3>{project.name}</h3>
-                <p>{project.text}</p>
+            {publications.map((pub) => (
+              <article className="card" key={pub.title}>
+                <h3>
+                  <a href={pub.link} target="_blank" rel="noreferrer">
+                    {pub.title}
+                  </a>
+                </h3>
+                <p className="muted">
+                  {pub.journal} - {pub.year}
+                </p>
               </article>
             ))}
           </div>
@@ -96,7 +105,8 @@ export default function App() {
           <p className="section-tag">Contact</p>
           <h2>Let’s work together</h2>
           <p className="lead">
-            I’m open to creative collaborations, internships, research, and design/development work.
+            I’m open to creative collaborations, internships, research, and
+            design/development work.
           </p>
           <a className="button-link" href="mailto:you@example.com">
             Say hello

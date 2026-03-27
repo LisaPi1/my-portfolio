@@ -11,16 +11,6 @@ body {
 }
 
 
-.card a {
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, opacity 0.2s ease;
-}
-
-.card a:hover {
-  border-color: #b8aa96;
-  opacity: 0.8;
-}
 /*:root {
   --text: #6b6375;
   --text-h: #08060d;
