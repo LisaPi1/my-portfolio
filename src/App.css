@@ -68,11 +68,19 @@ a {
 }
 
 .contact-list a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*
+.contact-list a {
   color: #2f2a24;
   width: fit-content;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease, opacity 0.2s ease;
 }
+*/
 
 .contact-list a:hover {
   border-color: #b8aa96;

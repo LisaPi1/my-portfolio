@@ -1,4 +1,5 @@
 import "./App.css";
+import { Mail, Github, Linkedin, FileText } from "lucide-react";
 
 const experiences = [
   {
@@ -43,10 +44,21 @@ export default function App() {
           </p>
 
           <nav className="contact-list">
-            <a href="mailto:you@example.com">Email</a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="#">CV</a>
+            <a href="mailto:you@example.com">
+              <Mail size={18} /> Email
+            </a>
+
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <Github size={18} /> GitHub
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+              <Linkedin size={18} /> LinkedIn
+            </a>
+
+            <a href="#" target="_blank" rel="noreferrer">
+              <FileText size={18} /> CV
+            </a>
           </nav>
         </div>
       </aside>
