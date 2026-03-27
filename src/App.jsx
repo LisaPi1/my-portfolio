@@ -1,5 +1,4 @@
 import "./App.css";
-import { Mail, Github, Linkedin, FileText } from "lucide-react";
 
 const experiences = [
   {
@@ -43,23 +42,12 @@ export default function App() {
             research, and visual storytelling.
           </p>
 
-          <nav className="contact-list">
-            <a href="mailto:you@example.com">
-              <Mail size={18} /> Email
-            </a>
-
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <Github size={18} /> GitHub
-            </a>
-
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
-              <Linkedin size={18} /> LinkedIn
-            </a>
-
-            <a href="#" target="_blank" rel="noreferrer">
-              <FileText size={18} /> CV
-            </a>
-          </nav>
+        <nav className="contact-list">
+          <a href="mailto:you@example.com">📧 Email</a>
+          <a href="https://polimi.it/">🎓 Politecnico di Milano</a>
+          <a href="https://linkedin.com/">💼 LinkedIn</a>
+          <a href="#">📄 CV</a>
+        </nav>
         </div>
       </aside>
 
