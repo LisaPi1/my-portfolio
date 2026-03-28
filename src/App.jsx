@@ -1,5 +1,4 @@
 import "./App.css";
-import { useEffect, useState } from "react";
 
 const experiences = [
   {
@@ -32,59 +31,14 @@ const publications = [
 ];
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState("about");
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        root: null,
-        rootMargin: "-35% 0px -45% 0px",
-        threshold: 0.1
-      }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="page">
       <header className="topbar">
         <nav className="topbar-nav">
-          <a
-            href="#about"
-            className={activeSection === "about" ? "active" : ""}
-          >
-            About
-          </a>
-          <a
-            href="#experience"
-            className={activeSection === "experience" ? "active" : ""}
-          >
-            Experience
-          </a>
-          <a
-            href="#publications"
-            className={activeSection === "publications" ? "active" : ""}
-          >
-            Publications
-          </a>
-          <a
-            href="#contact"
-            className={activeSection === "contact" ? "active" : ""}
-          >
-            Contact
-          </a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
