@@ -132,11 +132,11 @@ export default function App() {
             <p className="section-tag">About</p>
             <h2>Hi, I'm Lisa.</h2>
             <p className="lead">
-             Ph.D. candidate in Systems and Control at Politecnico di Milano (Italy). 
-              {/* I received a B.Sc. degree in Automation Engineering in 2021 and a M.Sc. degree in Automation and Control Engineering in 2023 from Politecnico di Milano. */}
+             Ph.D. candidate in Systems and Control at Politecnico di Milano, Italy. 
              My research interests include the study of networked systems with applications to social networks and collective decision-making processes.
             </p>
           </section>
+              {/* I received a B.Sc. degree in Automation Engineering in 2021 and a M.Sc. degree in Automation and Control Engineering in 2023 from Politecnico di Milano. */}
 
           <section className="section" id="experience">
             <p className="section-tag">Experience</p>
