@@ -218,6 +218,8 @@ a {
 }
 
 /* EXPERIENCE TIMELINE */
+
+/*
 .timeline {
   position: relative;
   margin-top: 28px;
@@ -266,14 +268,71 @@ a {
   height: 12px;
   border-radius: 50%;
   background: #d9cfbf;
+  box-shadow: 0 0 0 4px #f5f3ee;
+  z-index: 2; 
+}
 
-  /* RIMUOVI questo */
-  /* border: 2px solid #f5f3ee; */
+.timeline-content h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  line-height: 1.2;
+}
 
-  /* NUOVO: più pulito */
-  box-shadow: 0 0 0 4px #f5f3ee; /* crea lo “spazio” attorno */
+.timeline-content .muted {
+  margin: 0 0 12px;
+}
+*/
 
-  z-index: 2; /* sopra la linea */
+.timeline {
+  position: relative;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  bottom: 18px;
+  left: 176px; /* spostata più a destra */
+  width: 1px;
+  background: rgba(47, 42, 36, 0.12);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 150px 36px 1fr;
+  column-gap: 18px;
+  align-items: start;
+  padding: 8px 0 26px;
+}
+
+.timeline-date {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7a7268;
+  text-align: right;
+  padding-top: 14px; /* così la data si allinea meglio al titolo */
+}
+
+.timeline-marker {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 14px; /* ABBASSA il pallino */
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d9cfbf;
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
 }
 
 .timeline-content h3 {
