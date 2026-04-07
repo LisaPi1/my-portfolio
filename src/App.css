@@ -231,9 +231,10 @@ a {
   position: absolute;
   top: 8px;
   bottom: 8px;
-  left: 168px;
+  left: calc(150px + 18px);
   width: 1px;
   background: rgba(47, 42, 36, 0.12);
+  z-index: 1;
 }
 
 .timeline-item {
@@ -259,15 +260,20 @@ a {
   position: relative;
 }
 
+
 .timeline-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: #d9cfbf;
-  border: 2px solid #f5f3ee;
-  box-shadow: 0 0 0 1px rgba(47, 42, 36, 0.12);
-  margin-top: 4px;
-  z-index: 1;
+
+  /* RIMUOVI questo */
+  /* border: 2px solid #f5f3ee; */
+
+  /* NUOVO: più pulito */
+  box-shadow: 0 0 0 4px #f5f3ee; /* crea lo “spazio” attorno */
+
+  z-index: 2; /* sopra la linea */
 }
 
 .timeline-content h3 {

@@ -97,7 +97,7 @@ export default function App() {
               PhD Candidate in Systems and Control
             </p>
             <p className="location">📍 Milan, Italy</p>
-            <div className="affiliation">
+            {/* <div className="affiliation">
               <a
                 href="https://www.polimi.it/"
                 target="_blank"
@@ -112,6 +112,17 @@ export default function App() {
               <a href="https://www.linkedin.com/in/lisapiccinin" target="_blank" rel="noreferrer">
             💼 LinkedIn
               </a>
+            </nav> */}
+            <nav className="contact-list">
+              <a href="https://phd-inf.polimi.it/phd-current-students/piccinin-lisa-1249081d/" target="_blank" rel="noreferrer">
+                🔗 PoliMi Profile
+              </a>
+              <a href="mailto:lisa.piccinin@polimi.it">
+              ✉️ Email: lisa.piccinin@polimi.it
+              </a>
+              <a href="https://www.linkedin.com/in/lisapiccinin" target="_blank" rel="noreferrer">
+                💼 LinkedIn
+              </a>
             </nav>
           </div>
         </aside>
@@ -122,6 +133,7 @@ export default function App() {
             <h2>Hi, I'm Lisa.</h2>
             <p className="lead">
              Ph.D. candidate in Systems and Control with focus in dynamical, multi-agents systems and control techniques. 
+             My research interests include the study of networked systems with applications to social networks and collective decision-making processes.
             </p>
           </section>
 
