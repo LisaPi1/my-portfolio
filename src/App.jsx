@@ -8,6 +8,12 @@ const experiences = [
     text: ""
   },
   {
+    role: "Teaching Assistant - Fundamentals of Control Systems",
+    place: "Politecnico di Milano, Milan, Italy",
+    date: "Oct 2024 - Present",
+    text: ""
+  },
+  {
     role: "Visiting Ph.D. Intern",
     place: "Italian National Research Council, Turin, Italy",
     date: "Oct 2025 - Oct 2026",
@@ -19,29 +25,26 @@ const experiences = [
     date: "Jan 2025 - Jul 2025",
     text: ""
   },
-  {
-    role: "Teaching Assistant",
-    place: "Politecnico di Milano, Milan, Italy",
-    date: "Oct 2024 - Present",
-    text: ""
-  }
 ];
 
 const publications = [
     {
     title: "Optimal policy design for innovation diffusion: Shaping today’s incentives for transforming the future",
+    authors: "L. Piccinin, V. Breschi, C. Ravazzi, F. Dabbene, and M. Tanelli",
     journal: "Control Engineering Practice",
     year: "2026",
     link: "https://www.sciencedirect.com/science/article/pii/S096706612600198X"
   },
   {
     title: "Innovation Diffusion Dynamics Toward Long-Term Behavioral Shifts",
+    authors: "L. Piccinin, V. Breschi, C. Ravazzi, F. Dabbene, and M. Tanelli",
     journal: "IEEE Control Systems Letters, presented at the 2025 IEEE Conference on Decision and Control (CDC)",
     year: "2025",
     link: "https://ieeexplore.ieee.org/abstract/document/11029080"
   },
   {
     title: "Learning-based estimation of operators’ psycho-physiological state",
+    authors: "L. Piccinin, J. Leoni, E. Villa, S. Milani, V. Breschi, M. Tanelli, M. Colavincenzo, and S. Martorana",
     journal: "Expert Systems with Applications",
     year: "2025",
     link: "https://www.sciencedirect.com/science/article/pii/S0957417425007195"
@@ -61,6 +64,7 @@ export default function App() {
       </header>
 
       <div className="layout">
+          {/*
         <aside className="sidebar">
           <div className="sidebar-inner">
             <p className="small-label">About me | Lisa</p>
@@ -78,6 +82,39 @@ export default function App() {
                 💼 LinkedIn
               </a>
               <a href="#">📄 CV</a>
+            </nav>
+          </div>
+        </aside> 
+        */}
+
+        <aside className="sidebar">
+          <div className="sidebar-inner">
+            <p className="small-label">About me</p>
+
+            <h1>Lisa Piccinin</h1>
+
+            <p className="intro">
+              PhD Candidate in Systems and Control
+            </p>
+
+            <p className="location">📍 Milan, Italy</p>
+
+            <div className="affiliation">
+              <a
+                href="https://www.polimi.it/"
+                target="_blank"
+                rel="noreferrer"
+                className="affiliation-link"
+              >
+                🔗 Politecnico di Milano
+              </a>
+            </div>
+
+            <nav className="contact-list">
+              <a href="mailto:lisa.piccinin@polimi.it">✉️ Email</a>
+              <a href="https://www.linkedin.com/in/lisapiccinin" target="_blank" rel="noreferrer">
+            💼 LinkedIn
+              </a>
             </nav>
           </div>
         </aside>
@@ -126,6 +163,9 @@ export default function App() {
                       {pub.title}
                     </a>
                   </h3>
+
+                  <p className="publication-authors">{pub.authors}</p>
+
                   <p className="muted">
                     {pub.journal} - {pub.year}
                   </p>

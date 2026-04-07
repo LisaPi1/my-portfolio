@@ -184,6 +184,13 @@ a {
   box-shadow: 0 8px 24px rgba(47, 42, 36, 0.04);
 }
 
+.publication-authors {
+  margin: 8px 0 0;
+  line-height: 1.7;
+  color: #4f483f;
+  font-size: 15px;
+}
+
 .card h3 {
   margin: 0 0 6px;
   font-size: 22px;
