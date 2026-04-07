@@ -322,29 +322,6 @@ a {
   padding-top: 6px;
 }
 
-.timeline-marker,
-.timeline-dot {
-  display: none;
-}
-
-.timeline-content h3 {
-  margin: 0 0 6px;
-  font-size: 22px;
-  line-height: 1.2;
-}
-
-.timeline-content .muted {
-  margin: 0 0 10px;
-}
-
-.timeline-text {
-  margin: 0;
-  line-height: 1.8;
-  color: #4f483f;
-  max-width: 620px;
-}
-
-/* CONTENUTO */
 .timeline-content h3 {
   margin: 0 0 6px;
   font-size: 22px;
@@ -396,11 +373,6 @@ a {
     text-align: left;
     padding-top: 0;
     margin: 0;
-  }
-
-  .timeline-marker,
-  .timeline-dot {
-    display: none !important;
   }
 
   .timeline-content {
