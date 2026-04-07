@@ -299,10 +299,10 @@ a {
 .timeline::before {
   content: "";
   position: absolute;
-  top: 5px;
-  bottom: 12px;
-  left: 168px;
-  width: 0px;
+  top: 8px;
+  bottom: 8px;
+  left: 160px;
+  width: 1px;
   background: rgba(47, 42, 36, 0.12);
 }
 
