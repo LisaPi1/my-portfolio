@@ -2,32 +2,50 @@ import "./App.css";
 
 const experiences = [
   {
-    role: "Research Assistant",
-    place: "University / Studio / Company",
-    date: "2025 - Present",
-    text: "Write 1-2 lines about what you do and what impact you have."
+    role: "PhD Candidate",
+    place: "Politecnico di Milano, Milan, Italy",
+    date: "Dec 2023 - Dec 2026",
+    text: ""
   },
   {
-    role: "Intern",
-    place: "Company Name",
-    date: "2024 - 2025",
-    text: "Write a short description of your work, tools, or responsibilities."
+    role: "Visiting Ph.D. Intern",
+    place: "Italian National Research Council, Turin, Italy",
+    date: "Oct 2025 - Oct 2026",
+    text: ""
+  },
+  {
+    role: "Visiting Ph.D. Researcher",
+    place: "Eindhoven University of Technology, Eindhoven, The Netherlands",
+    date: "Jan 2025 - Jul 2025",
+    text: ""
+  },
+  {
+    role: "Teaching Assistant",
+    place: "Politecnico di Milano, Milan, Italy",
+    date: "Oct 2024 - Present",
+    text: ""
   }
 ];
 
 const publications = [
-  {
-    title: "Paper Title One",
-    journal: "Journal / Conference Name",
-    year: "2025",
-    link: "https://example.com"
+    {
+    title: "Optimal policy design for innovation diffusion: Shaping today’s incentives for transforming the future",
+    journal: "Control Engineering Practice",
+    year: "2026",
+    link: "https://www.sciencedirect.com/science/article/pii/S096706612600198X"
   },
   {
-    title: "Paper Title Two",
-    journal: "Journal / Conference Name",
-    year: "2024",
-    link: "https://example.com"
-  }
+    title: "Innovation Diffusion Dynamics Toward Long-Term Behavioral Shifts",
+    journal: "IEEE Control Systems Letters, presented at the 2025 IEEE Conference on Decision and Control (CDC)",
+    year: "2025",
+    link: "https://ieeexplore.ieee.org/abstract/document/11029080"
+  },
+  {
+    title: "Learning-based estimation of operators’ psycho-physiological state",
+    journal: "Expert Systems with Applications",
+    year: "2025",
+    link: "https://www.sciencedirect.com/science/article/pii/S0957417425007195"
+  },
 ];
 
 export default function App() {
@@ -48,8 +66,7 @@ export default function App() {
             <p className="small-label">About me | Lisa</p>
             <h1>Lisa</h1>
             <p className="intro">
-              I’m a designer/developer interested in thoughtful digital experiences,
-              research, and visual storytelling.
+              PhD Candidate 
             </p>
 
             <nav className="contact-list">
@@ -68,10 +85,9 @@ export default function App() {
         <main className="content">
           <section className="section hero-section" id="about">
             <p className="section-tag">About</p>
-            <h2>Hi, I’m Lisa.</h2>
+            <h2>Hi, I'm Lisa.</h2>
             <p className="lead">
-              I create calm, elegant, human-centered web experiences with a focus on
-              clarity, motion, and structure.
+             Ph.D. candidate in Systems and Control with focus in dynamical, multi-agents systems and control techniques. 
             </p>
           </section>
 
@@ -122,11 +138,10 @@ export default function App() {
             <p className="section-tag">Contact</p>
             <h2>Let’s work together</h2>
             <p className="lead">
-              I’m open to creative collaborations, internships, research, and
-              design/development work.
+              I’m open to collaborations.
             </p>
-            <a className="button-link" href="mailto:you@example.com">
-              Say hello
+            <a className="button-link" href="mailto:lisa.piccinin@polimi.it">
+              Contact me!
             </a>
           </section>
         </main>
