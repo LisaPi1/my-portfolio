@@ -231,14 +231,14 @@ a {
   position: absolute;
   top: 8px;
   bottom: 8px;
-  left: 158px;
+  left: 168px;
   width: 1px;
   background: rgba(47, 42, 36, 0.12);
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 140px 36px 1fr;
+  grid-template-columns: 150px 36px 1fr;
   column-gap: 18px;
   align-items: start;
   padding: 8px 0 26px;

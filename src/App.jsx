@@ -3,25 +3,25 @@ import "./App.css";
 const experiences = [
   {
     role: "PhD Candidate",
-    place: "Politecnico di Milano, Milan, Italy",
+    place: "Politecnico di Milano | Milan, Italy",
     date: "Dec 2023 - Dec 2026",
     text: ""
   },
   {
     role: "Teaching Assistant - Fundamentals of Control Systems",
-    place: "Politecnico di Milano, Milan, Italy",
+    place: "Politecnico di Milano | Milan, Italy",
     date: "Oct 2024 - Present",
     text: ""
   },
   {
     role: "Visiting Ph.D. Intern",
-    place: "Italian National Research Council, Turin, Italy",
+    place: "Italian National Research Council | Turin, Italy",
     date: "Oct 2025 - Oct 2026",
     text: ""
   },
   {
     role: "Visiting Ph.D. Researcher",
-    place: "Eindhoven University of Technology, Eindhoven, The Netherlands",
+    place: "Eindhoven University of Technology | Eindhoven, The Netherlands",
     date: "Jan 2025 - Jul 2025",
     text: ""
   },
@@ -96,9 +96,7 @@ export default function App() {
             <p className="intro">
               PhD Candidate in Systems and Control
             </p>
-
             <p className="location">📍 Milan, Italy</p>
-
             <div className="affiliation">
               <a
                 href="https://www.polimi.it/"
@@ -109,7 +107,6 @@ export default function App() {
                 🔗 Politecnico di Milano
               </a>
             </div>
-
             <nav className="contact-list">
               <a href="mailto:lisa.piccinin@polimi.it">✉️ Email</a>
               <a href="https://www.linkedin.com/in/lisapiccinin" target="_blank" rel="noreferrer">
@@ -178,7 +175,7 @@ export default function App() {
             <p className="section-tag">Contact</p>
             <h2>Let’s work together</h2>
             <p className="lead">
-              I’m open to collaborations.
+              
             </p>
             <a className="button-link" href="mailto:lisa.piccinin@polimi.it">
               Contact me!
