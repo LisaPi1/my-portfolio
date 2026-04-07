@@ -218,7 +218,6 @@ a {
 }
 
 /* EXPERIENCE TIMELINE */
-
 /*
 .timeline {
   position: relative;
@@ -281,8 +280,16 @@ a {
 .timeline-content .muted {
   margin: 0 0 12px;
 }
+
+.timeline-text {
+  margin: 0;
+  line-height: 1.8;
+  color: #4f483f;
+  max-width: 620px;
+}
 */
 
+/* TIMELINE */
 .timeline {
   position: relative;
   margin-top: 28px;
@@ -291,50 +298,68 @@ a {
   gap: 8px;
 }
 
+/* LINEA */
 .timeline::before {
   content: "";
   position: absolute;
-  top: 28px;
-  bottom: 18px;
-  left: 176px; /* spostata più a destra */
+  top: 24px;
+  bottom: 12px;
+
+  /* posizione perfetta = centro colonna dot */
+  left: calc(150px + 18px + 18px);
+
   width: 1px;
   background: rgba(47, 42, 36, 0.12);
+  z-index: 1;
 }
 
+/* GRID */
 .timeline-item {
   display: grid;
   grid-template-columns: 150px 36px 1fr;
   column-gap: 18px;
   align-items: start;
-  padding: 8px 0 26px;
+  padding: 8px 0 28px;
 }
 
+/* DATE */
 .timeline-date {
   font-size: 14px;
   line-height: 1.6;
   color: #7a7268;
   text-align: right;
-  padding-top: 14px; /* così la data si allinea meglio al titolo */
+
+  /* allinea con il titolo */
+  padding-top: 6px;
 }
 
+/* COLONNA DOT */
 .timeline-marker {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  padding-top: 14px; /* ABBASSA il pallino */
+
+  /* micro-adjust verticale */
+  padding-top: 6px;
 }
 
+/* DOT PERFETTO */
 .timeline-dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #d9cfbf;
+
+  background: #2f2a24;
+
+  /* QUESTO crea l’effetto “linea che passa dentro” */
+  box-shadow: 0 0 0 6px #f5f3ee;
+
   position: relative;
   z-index: 2;
-  margin-top: 0;
 }
 
+/* CONTENUTO */
 .timeline-content h3 {
   margin: 0 0 6px;
   font-size: 22px;
@@ -342,7 +367,7 @@ a {
 }
 
 .timeline-content .muted {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .timeline-text {
