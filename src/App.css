@@ -302,11 +302,11 @@ a {
 .timeline::before {
   content: "";
   position: absolute;
-  top: 24px;
-  bottom: 12px;
+  top: 8px;
+  bottom: 8px;
 
   /* posizione perfetta = centro colonna dot */
-  left: calc(150px + 18px + 18px);
+  left: calc(150px + 18px + 18px + 6px);
 
   width: 1px;
   background: rgba(47, 42, 36, 0.12);
